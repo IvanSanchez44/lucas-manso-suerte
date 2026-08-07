@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Mucha suerte, Lucas!</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#005AA7,#00C6FB);
+            overflow:hidden;
+        }
+
+        .background{
+            position:fixed;
+            inset:0;
+            overflow:hidden;
+        }
+
+        .circle{
+            position:absolute;
+            border-radius:50%;
+            background:rgba(255,255,255,.12);
+            animation:float 12s infinite ease-in-out;
+        }
+
+        .circle:nth-child(1){
+            width:250px;
+            height:250px;
+            left:-60px;
+            top:-60px;
+        }
+
+        .circle:nth-child(2){
+            width:180px;
+            height:180px;
+            right:8%;
+            top:15%;
+            animation-duration:16s;
+        }
+
+        .circle:nth-child(3){
+            width:320px;
+            height:320px;
+            right:-100px;
+            bottom:-120px;
+            animation-duration:18s;
+        }
+
+        @keyframes float{
+            50%{
+                transform:translateY(-25px) scale(1.05);
+            }
+        }
+
+        .card{
+            position:relative;
+            z-index:1;
+            background:rgba(255,255,255,.96);
+            width:min(90%,760px);
+            padding:55px 45px;
+            border-radius:24px;
+            box-shadow:0 20px 50px rgba(0,0,0,.2);
+            text-align:center;
+        }
+
+        h1{
+            color:#005AA7;
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        h2{
+            color:#333;
+            font-weight:500;
+            margin-bottom:30px;
+        }
+
+        p{
+            color:#444;
+            font-size:1.2rem;
+            line-height:1.8;
+            margin-bottom:18px;
+        }
+
+        .emoji{
+            font-size:3rem;
+            margin:25px 0;
+        }
+
+        .highlight{
+            color:#005AA7;
+            font-weight:bold;
+        }
+
+        .footer{
+            margin-top:35px;
+            font-size:1.1rem;
+            color:#666;
+            font-style:italic;
+        }
+
+        @media(max-width:600px){
+            h1{
+                font-size:2.2rem;
+            }
+
+            p{
+                font-size:1.05rem;
+            }
+
+            .card{
+                padding:35px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="background">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+
+<div class="card">
+
+    <h1>🍀 ¡Mucha suerte, Lucas! 🍀</h1>
+
+    <h2>Un nuevo capítulo comienza...</h2>
+
+    <p>
+        Querido <span class="highlight">Lucas Manso</span>,
+    </p>
+
+    <p>
+        Hoy empiezas una aventura muy especial. Has decidido coger una
+        <strong>excedencia</strong> para irte a <strong>Madrid</strong> y
+        estudiar un <strong>Máster</strong>, apostando por seguir creciendo
+        tanto personal como profesionalmente.
+    </p>
+
+    <p>
+        Sabemos que será un camino lleno de retos, esfuerzo y mucho aprendizaje,
+        pero también de nuevas amistades, oportunidades y experiencias que
+        recordarás siempre.
+    </p>
+
+    <div class="emoji">🎓🚄📚✨</div>
+
+    <p>
+        Te deseamos que disfrutes cada momento, que aproveches al máximo esta
+        oportunidad y que consigas todo aquello que te propongas.
+    </p>
+
+    <p>
+        Estamos convencidos de que volverás con una mochila llena de conocimientos,
+        grandes historias... ¡y muchos éxitos!
+    </p>
+
+    <h2>¡Muchísima suerte en esta nueva aventura!</h2>
+
+    <div class="footer">
+        Tus compañeros te echaremos de menos.<br><br>
+        ¡Hasta pronto! ❤️
+    </div>
+
+</div>
+
+</body>
+</html>
